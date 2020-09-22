@@ -19,7 +19,7 @@ a{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 /* Hero Section */
@@ -32,9 +32,9 @@ a{
 
 
 #hero{
-    background-image: url("img/IMG_1778.JPG");
+    background-image: url("img/Beautiful-Island-Taihiti-HD-Wallpaper-Full-HD-1080p-HDTV.jpg");
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     position: relative;
     z-index: 1;
 }
@@ -99,13 +99,85 @@ a{
     margin-top: 30px;
     letter-spacing: .1rem;
     transition: 0.3s ease;
-    text-transform: uppercase;
     transition-property: background-color, color;
 }
 
 #hero .cta:hover{
     color: rgb(133, 205, 50);
     background-color: blueviolet;
+}
+
+#places{
+}
+
+#places .places{
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#places .section.title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#places .section.title span{
+    color: crimson;
+}
+
+
+#places .places-top{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: 0.05rem;
+}
+
+#places .places-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#places .places-item{
+    width: 400px;
+    height: 300px;
+    background-position: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: contain;
+    margin: 10px 5%;
+    transition: 0.3s;
+}
+
+#places .places-item:hover{
+    transform: scale(2.3);
+}
+
+#places .berlin{
+    background-image: url(img/IMG_1831.JPG);
+}
+
+#places .venice{
+    background-image: url(img/P5070180.JPG);
+}
+
+#places .london{
+    background-image: url(img/210505_209723619047329_942003_o.jpg);
 }
 
 @keyframes text_reveal_box{
@@ -127,7 +199,7 @@ a{
 
 @keyframes text_reveal_traveler{
     100%{
-        color: blueviolet;
+        color: white;
         font-weight: 500;
     }
 }
