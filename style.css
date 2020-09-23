@@ -117,9 +117,6 @@ a{
     background-color: blueviolet;
 }
 
-#places{
-}
-
 #places .places{
     flex-direction: column;
     text-align: center;
@@ -193,6 +190,62 @@ a{
 #places .london{
     background-image: url(img/210505_209723619047329_942003_o.jpg);
 }
+
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 20px;
+    max-width: 1200px;
+}
+
+#about .col-left .about-img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 8px solid white;
+    object-fit: cover;
+}
+
+#about .col-left .about-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 33px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid blueviolet;
+    z-index: -1;
+}
+
+#about img{
+    width: inherit;
+}
+
+#about .col-left{
+    height: 406px;
+    width: 406px;
+    margin-top: 40px;
+}
+
+#about .col-right{
+    width: 40%;
+    line-height: 2.5rem;
+}
+
+#about .col-right h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#about .col-right p{
+    font-weight: bold;
+}
+
 
 @keyframes text_reveal_box{
     50%{
