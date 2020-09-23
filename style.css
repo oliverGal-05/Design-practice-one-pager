@@ -134,9 +134,8 @@ a{
     letter-spacing: .2rem;
     text-align: center;
 }
-
-#places .section.title span{
-    color: crimson;
+.section-title span{
+    color: blueviolet;
 }
 
 
@@ -158,6 +157,7 @@ a{
 #places .places-item{
     width: 400px;
     height: 300px;
+    padding-top: 3rem;
     background-position: center;
     display: flex;
     color: white;
@@ -170,7 +170,7 @@ a{
     background-size: contain;
     margin: 10px 5%;
     transition: 0.3s;
-    box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 0px 0px 18px 0 #000002;
 }
 
 
@@ -238,7 +238,7 @@ a{
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: capitalize;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     text-align: center;
 }
 
@@ -246,6 +246,54 @@ a{
     font-weight: bold;
 }
 
+#contact .contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width: 450px;
+    margin: auto;
+    padding: 10px;
+}
+
+#contact .contact-item{
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #000002;
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #000002;
+}
+
+#contact .icon{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact .icon img{
+    width: 70px;
+    height: 70px;
+}
+
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
 
 @keyframes text_reveal_box{
     50%{
